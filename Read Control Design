@@ -22,7 +22,7 @@ module rptr_handler #(parameter PTR_WIDTH=3) (
       g_rptr <= g_rptr_next;
     end
   end
-  
+
   always@(posedge rclk or negedge rrst_n) begin
     if(!rrst_n) empty <= 1;
     else        empty <= rempty;
